@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>INPUT</p>
+    INPUT <input type="number" id = "num">
+    <button onclick="myFunction()">Submit</button>
+    <p>input: <span id="demo"></span></p>
+    <script>
+       function myFunction() {
+        var number = document.getElementById("num").value;
+        var greeting;
+        
+            if (number == 1) {
+            greeting = "Chu Nhat";
+            } else if ( number == 2) {
+            greeting = "Thu 2";
+            }
+            else if ( number == 3) {
+            greeting = "Thu 3";
+            }
+            else if ( number == 4) {
+            greeting = "Thu 4";
+            }
+            else if ( number == 5) {
+            greeting = "Thu 5";
+            }
+            else if ( number == 6) {
+            greeting = "Thu 6";
+            }
+            else if ( number == 7) {
+            greeting = "Thu 7";
+            } else {
+            greeting = "nhap lại tu 1-7";
+            }
+            document.getElementById("demo").innerHTML = greeting ;
+
+       }
+
+
+    </script>
+</body>
+</html>
