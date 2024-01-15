@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Today <input type="text" id="nhap">
+    <button onclick="myFunction()">Submit</button>
+    <p>display: <span id="demo"></span></p>
+    <script>
+        function myFunction(){
+            var number = document.getElementById("nhap").value;
+            var greeting;
+            if(number == 1){
+                greeting = "Chủ nhật";
+            }
+            else if(number == 2){
+                greeting = "Thứ 2";
+            }
+            else if(number == 3){
+                greeting = "Thứ 3";
+            }
+            else if(number == 4){
+                greeting = "Thứ 4";
+            }
+            else if(number == 5){
+                greeting = "Thứ 5";
+            }
+            else if(number == 6){
+                greeting = "Thứ 6";
+            }
+            else if(number == 7){
+                greeting = "Thứ 7";
+            }
+            else{
+                greeting = "Vui lòng nhập số từ 1-7 !";
+            }
+            document.getElementById("demo").innerHTML = greeting;
+        }
+    </script>
+</body>
+</html>
